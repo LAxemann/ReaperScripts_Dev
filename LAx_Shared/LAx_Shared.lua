@@ -2,11 +2,11 @@
 -- @author Leon 'LAxemann' Beilmann
 -- @version 0.90
 -- @about
--- # About
--- Functions shared between premium scripts done by LAxemann
+--   # About
+--   Functions shared between premium scripts done by LAxemann
 --
--- # Requirements
--- JS_ReaScriptAPI, SWS Extension
+--   # Requirements
+--   JS_ReaScriptAPI, SWS Extension
 -- @links
 --  Website https://www.youtube.com/@LAxemann
 -- @provides 

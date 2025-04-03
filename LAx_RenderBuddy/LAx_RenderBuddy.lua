@@ -2,16 +2,16 @@
 -- @author Leon 'LAxemann' Beilmann
 -- @version 0.90
 -- @about
--- # About
--- Key features include:
--- -Automatic detection and clustering of SFX variations
--- -Context-sensitivity: A single click can allow you to render based on selected items, selected tracks or track folders and their children
--- -Support for sequential batch-rendering of multiple track folders
--- -No real previous project preparation, no real workflow adherence required
--- -Key modifiers for setting custom names before rendering, using previous settings, keeping the created render regions or processing and rendering all subfolders of selected folders in sequence
+--   # About
+--   Key features include:
+--   -Automatic detection and clustering of SFX variations
+--   -Context-sensitivity: A single click can allow you to render based on selected items, selected tracks or track folders and their children
+--   -Support for sequential batch-rendering of multiple track folders
+--   -No real previous project preparation, no real workflow adherence required
+--   -Key modifiers for setting custom names before rendering, using previous settings, keeping the created render regions or processing and rendering all subfolders of selected folders in sequence
 --
---  # Requirements
---  JS_ReaScriptAPI, SWS Extension
+--    # Requirements
+--    JS_ReaScriptAPI, SWS Extension
 -- @links
 --  Website https://www.youtube.com/@LAxemann
 -- @provides 
