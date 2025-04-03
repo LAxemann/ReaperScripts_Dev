@@ -3,10 +3,11 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API
- Version: 0.91
+ Version: 0.92
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
+  [nomain] *.pdf
   **/*.dat
  About:
   # LAx_RenderBuddy
@@ -15,8 +16,8 @@
 
 --[[
  * Changelog:
-    * v0.91
-      + Test Commit
+    * v0.92
+      + PDF Testing
 ]]
 
 ----------------------------------------------------------------------------------------
