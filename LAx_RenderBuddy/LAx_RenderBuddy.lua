@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API
- Version: 0.92
+ Version: 0.93
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,7 +16,7 @@
 
 --[[
  * Changelog:
-    * v0.92
+    * v0.93
       + PDF Testing
 ]]
 
