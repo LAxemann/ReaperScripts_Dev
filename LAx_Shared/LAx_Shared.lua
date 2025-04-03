@@ -1,0 +1,16 @@
+-- @description Functions shared between premium scripts done by LAxemann.
+-- @author Leon 'LAxemann' Beilmann
+-- @version 0.90
+-- @about
+-- # About
+-- Functions shared between premium scripts done by LAxemann
+--
+-- # Requirements
+-- JS_ReaScriptAPI, SWS Extension
+-- @links
+--  Website https://www.youtube.com/@LAxemann
+-- @provides 
+--    **/*.dat
+--   [main] *.lua
+-- @changelog
+--	 0.90 Release staging
