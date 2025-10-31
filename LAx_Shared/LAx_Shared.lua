@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API
- Version: 0.93
+ Version: 1.02
  Provides:
   [main] *.lua
   **/*.dat
@@ -14,6 +14,7 @@
 
 --[[
  * Changelog:
-    * v0.93
-      + PDFTest
+    * v1.02
+      + Added: LAx_Shared_Utility
+      + Added: getExtStateValueStr to LAx_Shared_ExtState
 ]]

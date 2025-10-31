@@ -9,10 +9,14 @@ local parentFolder = currentFolder:match("(.*)/[^/]+/?$") or currentFolder:match
 parentFolder = parentFolder:gsub("\\", "/")
 
 reaper.SetExtState("LAx_RenderBuddy", "Directory", currentFolder, false)
-reaper.SetExtState("LAx_RenderBuddy", "MainDirectory", parentFolder, false)
+reaper.SetExtState("LAx_PremiumReaperScripts", "MainDirectory", parentFolder, false)
 
 local sep = package.config:sub(1, 1)
 dofile((currentFolder or "") .. DTAV .. sep .. "runShared" .. (reaper.file_exists((currentFolder or "") .. DTAV .. sep .. "runShared.lua") and ".lua" or ".dat"))
+
+if not LAx_init then
+    return
+end
 
 ----------------------------------------------------------------------------------------
 -- Settings
@@ -23,4 +27,4 @@ LAx_RenderBuddySettings.settings = {
 
 ----------------------------------------------------------------------------------------
 -- Run main file
-runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory", "") .. DTAV .. sep .. "functions", true)
+runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory") .. DTAV .. sep .. "functions", true)

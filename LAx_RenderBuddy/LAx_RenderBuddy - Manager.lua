@@ -1,5 +1,4 @@
 -- @noindex
-
 ----------------------------------------------------------------------------------------
 -- Run Shared
 DTAV = _VERSION == 'Lua 5.3' and 'dta53' or 'dta'
@@ -12,5 +11,20 @@ reaper.SetExtState("LAx_RenderBuddy", "Directory", currentFolder, false)
 reaper.SetExtState("LAx_PremiumReaperScripts", "MainDirectory", parentFolder, false)
 
 local sep = package.config:sub(1, 1)
-dofile((currentFolder or "") .. DTAV .. sep .. "runShared" .. (reaper.file_exists((currentFolder or "") .. DTAV .. sep .. "runShared.lua") and ".lua" or ".dat"))
-openLicenseManager()
+dofile((currentFolder or "") .. DTAV .. sep .. "runShared" ..
+           (reaper.file_exists((currentFolder or "") .. DTAV .. sep .. "runShared.lua") and ".lua" or ".dat"))
+
+if not LAx_init then
+    return
+end
+
+----------------------------------------------------------------------------------------
+-- Settings
+LAx_RenderBuddySettings = {}
+LAx_RenderBuddySettings.settings = {
+    doRender = false
+}
+
+----------------------------------------------------------------------------------------
+-- Run target file
+runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory") .. DTAV .. sep .. "manager", true)

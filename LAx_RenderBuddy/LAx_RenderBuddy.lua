@@ -3,11 +3,11 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API
- Version: 0.93
+ Version: 1.50
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
-  [nomain] *.pdf
+  [nomain] images/*.png
   **/*.dat
  About:
   # LAx_RenderBuddy
@@ -16,11 +16,19 @@
 
 --[[
  * Changelog:
-    * v0.93
-      + PDF Testing
-]]
-
-----------------------------------------------------------------------------------------
+    * v1.50
+      + Added: The "RenderBuddy Manager" which allows for a persistent managing of folders and all NameSwitch regions
+      + Added: "Always render in track mode" setting, which lets you ignore selected items and removes the need to de-select them first before rendering a track or folder
+      + Added: Optional render preview UI for rendering, listing all rendered tracks/folders and NameSwitch regions
+      + Added: Toolbar icon for the settings action
+      + Tweaked: Renderbuddy now properly supports wildcards while maintaining the ability to use e.g. $track and $folders wildcards
+      + Tweaked: New settings menu with custom UI
+      + Tweaked: Regular rendering and using RenderBuddy will both preserve their render patterns individually
+      + Tweaked: The $folders wildcard now behaves like in vanilla Reaper (no separator at the end)
+      + Tweaked: The default Reaper render window will be slightly adjusted when rendering via RenderBuddy
+      + Tweaked: NameSwitches will no longer be considered for context-sensitivity
+      + Tweaked: Other under-the-hood code changes
+]] ----------------------------------------------------------------------------------------
 -- Run Shared
 DTAV = _VERSION == 'Lua 5.3' and 'dta53' or 'dta'
 local currentFolder = (debug.getinfo(1).source:match("@?(.*[\\|/])"))
@@ -28,12 +36,19 @@ currentFolder = currentFolder:gsub("\\", "/")
 local parentFolder = currentFolder:match("(.*)/[^/]+/?$") or currentFolder:match("(.*)/")
 parentFolder = parentFolder:gsub("\\", "/")
 
+-- Set ExtState values
+local _, _, _, cmdID = reaper.get_action_context()
+reaper.SetExtState("LAx_RenderBuddy", "MainCommandID", tostring(cmdID), true)
 reaper.SetExtState("LAx_RenderBuddy", "Directory", currentFolder, false)
-reaper.SetExtState("LAx_RenderBuddy", "MainDirectory", parentFolder, false)
+reaper.SetExtState("LAx_PremiumReaperScripts", "MainDirectory", parentFolder, false)
 
 local sep = package.config:sub(1, 1)
 dofile((currentFolder or "") .. DTAV .. sep .. "runShared" ..
            (reaper.file_exists((currentFolder or "") .. DTAV .. sep .. "runShared.lua") and ".lua" or ".dat"))
+
+if not LAx_init then
+    return
+end
 
 ----------------------------------------------------------------------------------------
 -- Settings
@@ -52,5 +67,5 @@ end
 
 ----------------------------------------------------------------------------------------
 -- Run main file
-local file = isSubfolderRender() and "renderSubfolders" or "functions"
-runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory", "") .. DTAV .. sep .. file, true)
+local file = isSubfolderRender() and "renderSubfolders" or "main"
+runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory") .. DTAV .. sep .. file, true)
