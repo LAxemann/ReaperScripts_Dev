@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API
- Version: 1.51
+ Version: 1.52
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,7 +16,7 @@
 
 --[[
  * Changelog:
-    * v1.51
+    * v1.52
       + Added: The "RenderBuddy Manager" which allows for a persistent managing of folders and all NameSwitch regions
       + Added: "Always render in track mode" setting, which lets you ignore selected items and removes the need to de-select them first before rendering a track or folder
       + Added: Optional render preview UI for rendering, listing all rendered tracks/folders and NameSwitch regions
