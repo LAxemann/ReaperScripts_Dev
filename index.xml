@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LAx_ReaperScripts_Dev" commit="4638e5c81d16b4408c13fa576762d04ec101c852">
+<index version="1" name="LAx_ReaperScripts_Dev" commit="4fe27c89dbd45e68f947bfb2414430416a8a5380">
   <category name="LAx_RenderBuddy">
     <reapack name="LAx_RenderBuddy.lua" type="script" desc="LAx_RenderBuddy">
       <metadata>
@@ -362,6 +362,78 @@
         <source file="dta53/runShared.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4638e5c81d16b4408c13fa576762d04ec101c852/LAx_RenderBuddy/dta53/runShared.dat</source>
         <source file="dta53/settings.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4638e5c81d16b4408c13fa576762d04ec101c852/LAx_RenderBuddy/dta53/settings.dat</source>
       </version>
+      <version name="1.53" author="Leon 'LAxemann' Beilmann" time="2025-11-05T12:50:40Z">
+        <changelog><![CDATA[+ Added: The "RenderBuddy Manager" which allows for a persistent managing of folders and all NameSwitch regions
++ Added: "Always render in track mode" setting, which lets you ignore selected items and removes the need to de-select them first before rendering a track or folder
++ Added: Optional render preview UI for rendering, listing all rendered tracks/folders and NameSwitch regions
++ Added: Toolbar icons for settings, creating NameSwitches and the Manager
++ Tweaked: Renderbuddy now properly supports wildcards while maintaining the ability to use e.g. $track and $folders wildcards
++ Tweaked: New settings menu with custom UI
++ Tweaked: Regular rendering and using RenderBuddy will both preserve their render patterns individually
++ Tweaked: The $folders wildcard now behaves like in vanilla Reaper (no separator at the end)
++ Tweaked: The default Reaper render window will be slightly adjusted when rendering via RenderBuddy
++ Tweaked: NameSwitches will no longer be considered for context-sensitivity
++ Tweaked: Other under-the-hood code changes]]></changelog>
+        <source main="main" file="LAx_RenderBuddy - Create NameSwitch.lua">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/LAx_RenderBuddy%20-%20Create%20NameSwitch.lua</source>
+        <source main="main" file="LAx_RenderBuddy - Enter license.lua">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/LAx_RenderBuddy%20-%20Enter%20license.lua</source>
+        <source main="main" file="LAx_RenderBuddy - Manager.lua">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/LAx_RenderBuddy%20-%20Manager.lua</source>
+        <source main="main" file="LAx_RenderBuddy - Only create regions.lua">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/LAx_RenderBuddy%20-%20Only%20create%20regions.lua</source>
+        <source main="main" file="LAx_RenderBuddy - Render all subfolders of selected folders.lua">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/LAx_RenderBuddy%20-%20Render%20all%20subfolders%20of%20selected%20folders.lua</source>
+        <source main="main" file="LAx_RenderBuddy - Settings.lua">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/LAx_RenderBuddy%20-%20Settings.lua</source>
+        <source main="main">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/LAx_RenderBuddy.lua</source>
+        <source type="data" file="toolbar_icons/150/LAx_RenderBuddy - Create NameSwitch.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/150/LAx_RenderBuddy%20-%20Create%20NameSwitch.png</source>
+        <source type="data" file="toolbar_icons/150/LAx_RenderBuddy - Manager.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/150/LAx_RenderBuddy%20-%20Manager.png</source>
+        <source type="data" file="toolbar_icons/150/LAx_RenderBuddy - Settings.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/150/LAx_RenderBuddy%20-%20Settings.png</source>
+        <source type="data" file="toolbar_icons/150/LAx_RenderBuddy.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/150/LAx_RenderBuddy.png</source>
+        <source type="data" file="toolbar_icons/200/LAx_RenderBuddy - Create NameSwitch.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/200/LAx_RenderBuddy%20-%20Create%20NameSwitch.png</source>
+        <source type="data" file="toolbar_icons/200/LAx_RenderBuddy - Manager.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/200/LAx_RenderBuddy%20-%20Manager.png</source>
+        <source type="data" file="toolbar_icons/200/LAx_RenderBuddy - Settings.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/200/LAx_RenderBuddy%20-%20Settings.png</source>
+        <source type="data" file="toolbar_icons/200/LAx_RenderBuddy.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/200/LAx_RenderBuddy.png</source>
+        <source type="data" file="toolbar_icons/LAx_RenderBuddy - Create NameSwitch.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/LAx_RenderBuddy%20-%20Create%20NameSwitch.png</source>
+        <source type="data" file="toolbar_icons/LAx_RenderBuddy - Manager.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/LAx_RenderBuddy%20-%20Manager.png</source>
+        <source type="data" file="toolbar_icons/LAx_RenderBuddy - Settings.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/LAx_RenderBuddy%20-%20Settings.png</source>
+        <source type="data" file="toolbar_icons/LAx_RenderBuddy.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/toolbar_icons/LAx_RenderBuddy.png</source>
+        <source file="images/CogwheelImage.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/images/CogwheelImage.png</source>
+        <source file="images/SettingsImage.png">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/images/SettingsImage.png</source>
+        <source file="dta/c_GState.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_GState.dat</source>
+        <source file="dta/c_Help.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_Help.dat</source>
+        <source file="dta/c_HighlightedTrack.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_HighlightedTrack.dat</source>
+        <source file="dta/c_Itm.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_Itm.dat</source>
+        <source file="dta/c_Itms.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_Itms.dat</source>
+        <source file="dta/c_Manager.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_Manager.dat</source>
+        <source file="dta/c_ManagerData.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_ManagerData.dat</source>
+        <source file="dta/c_PreviewRegion.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_PreviewRegion.dat</source>
+        <source file="dta/c_RenderQueueItem.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_RenderQueueItem.dat</source>
+        <source file="dta/c_RenderRegion.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_RenderRegion.dat</source>
+        <source file="dta/c_RenderRegions.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_RenderRegions.dat</source>
+        <source file="dta/c_Trck.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_Trck.dat</source>
+        <source file="dta/c_Trcks.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/c_Trcks.dat</source>
+        <source file="dta/createNameSwitch.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/createNameSwitch.dat</source>
+        <source file="dta/main.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/main.dat</source>
+        <source file="dta/manager.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/manager.dat</source>
+        <source file="dta/renderSubfolders.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/renderSubfolders.dat</source>
+        <source file="dta/runShared.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/runShared.dat</source>
+        <source file="dta/settings.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta/settings.dat</source>
+        <source file="dta53/c_GState.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_GState.dat</source>
+        <source file="dta53/c_Help.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_Help.dat</source>
+        <source file="dta53/c_HighlightedTrack.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_HighlightedTrack.dat</source>
+        <source file="dta53/c_Itm.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_Itm.dat</source>
+        <source file="dta53/c_Itms.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_Itms.dat</source>
+        <source file="dta53/c_Manager.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_Manager.dat</source>
+        <source file="dta53/c_ManagerData.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_ManagerData.dat</source>
+        <source file="dta53/c_PreviewRegion.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_PreviewRegion.dat</source>
+        <source file="dta53/c_RenderQueueItem.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_RenderQueueItem.dat</source>
+        <source file="dta53/c_RenderRegion.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_RenderRegion.dat</source>
+        <source file="dta53/c_RenderRegions.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_RenderRegions.dat</source>
+        <source file="dta53/c_Trck.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_Trck.dat</source>
+        <source file="dta53/c_Trcks.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/c_Trcks.dat</source>
+        <source file="dta53/createNameSwitch.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/createNameSwitch.dat</source>
+        <source file="dta53/main.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/main.dat</source>
+        <source file="dta53/manager.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/manager.dat</source>
+        <source file="dta53/renderSubfolders.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/renderSubfolders.dat</source>
+        <source file="dta53/runShared.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/runShared.dat</source>
+        <source file="dta53/settings.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_RenderBuddy/dta53/settings.dat</source>
+      </version>
     </reapack>
   </category>
   <category name="LAx_Shared">
@@ -501,6 +573,31 @@
         <source file="dta53/LAx_Shared_Tables.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4638e5c81d16b4408c13fa576762d04ec101c852/LAx_Shared/dta53/LAx_Shared_Tables.dat</source>
         <source file="dta53/LAx_Shared_Utility.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4638e5c81d16b4408c13fa576762d04ec101c852/LAx_Shared/dta53/LAx_Shared_Utility.dat</source>
         <source file="dta53/LAx_Shared_Validate.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4638e5c81d16b4408c13fa576762d04ec101c852/LAx_Shared/dta53/LAx_Shared_Validate.dat</source>
+      </version>
+      <version name="1.05" author="Leon 'LAxemann' Beilmann" time="2025-11-05T12:50:40Z">
+        <changelog><![CDATA[+ Added: LAx_Shared_Utility
++ Added: getExtStateValueStr to LAx_Shared_ExtState]]></changelog>
+        <source main="main">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/LAx_Shared.lua</source>
+        <source file="dta/LAx_Shared_Colors.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta/LAx_Shared_Colors.dat</source>
+        <source file="dta/LAx_Shared_ExtState.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta/LAx_Shared_ExtState.dat</source>
+        <source file="dta/LAx_Shared_Items.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta/LAx_Shared_Items.dat</source>
+        <source file="dta/LAx_Shared_Main.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta/LAx_Shared_Main.dat</source>
+        <source file="dta/LAx_Shared_Render.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta/LAx_Shared_Render.dat</source>
+        <source file="dta/LAx_Shared_Settings.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta/LAx_Shared_Settings.dat</source>
+        <source file="dta/LAx_Shared_Styles.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta/LAx_Shared_Styles.dat</source>
+        <source file="dta/LAx_Shared_Tables.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta/LAx_Shared_Tables.dat</source>
+        <source file="dta/LAx_Shared_Utility.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta/LAx_Shared_Utility.dat</source>
+        <source file="dta/LAx_Shared_Validate.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta/LAx_Shared_Validate.dat</source>
+        <source file="dta53/LAx_Shared_Colors.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta53/LAx_Shared_Colors.dat</source>
+        <source file="dta53/LAx_Shared_ExtState.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta53/LAx_Shared_ExtState.dat</source>
+        <source file="dta53/LAx_Shared_Items.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta53/LAx_Shared_Items.dat</source>
+        <source file="dta53/LAx_Shared_Main.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta53/LAx_Shared_Main.dat</source>
+        <source file="dta53/LAx_Shared_Render.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta53/LAx_Shared_Render.dat</source>
+        <source file="dta53/LAx_Shared_Settings.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta53/LAx_Shared_Settings.dat</source>
+        <source file="dta53/LAx_Shared_Styles.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta53/LAx_Shared_Styles.dat</source>
+        <source file="dta53/LAx_Shared_Tables.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta53/LAx_Shared_Tables.dat</source>
+        <source file="dta53/LAx_Shared_Utility.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta53/LAx_Shared_Utility.dat</source>
+        <source file="dta53/LAx_Shared_Validate.dat">https://github.com/LAxemann/ReaperScripts_Dev/raw/4fe27c89dbd45e68f947bfb2414430416a8a5380/LAx_Shared/dta53/LAx_Shared_Validate.dat</source>
       </version>
     </reapack>
   </category>
