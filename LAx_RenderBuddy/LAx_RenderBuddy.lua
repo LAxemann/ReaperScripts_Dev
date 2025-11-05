@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API
- Version: 1.52
+ Version: 1.53
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,11 +16,11 @@
 
 --[[
  * Changelog:
-    * v1.52
+    * v1.53
       + Added: The "RenderBuddy Manager" which allows for a persistent managing of folders and all NameSwitch regions
       + Added: "Always render in track mode" setting, which lets you ignore selected items and removes the need to de-select them first before rendering a track or folder
       + Added: Optional render preview UI for rendering, listing all rendered tracks/folders and NameSwitch regions
-      + Added: Toolbar icon for the settings action
+      + Added: Toolbar icons for settings, creating NameSwitches and the Manager
       + Tweaked: Renderbuddy now properly supports wildcards while maintaining the ability to use e.g. $track and $folders wildcards
       + Tweaked: New settings menu with custom UI
       + Tweaked: Regular rendering and using RenderBuddy will both preserve their render patterns individually
