@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 1.54
+ Version: 2.00
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -11,12 +11,12 @@
   **/*.dat
  About:
   # LAx_RenderBuddy
-  
+
   ## A lightning-fast, context-sensitive one-button render solution for SFX and library creation.
 
 --[[
  * Changelog:
-    * v1.54
+    * v2.00
       + Added: The "RenderBuddy Manager" which allows for a persistent managing of folders and all NameSwitch regions
       + Added: A "Groups" functionality as part of the Manager, enabling saving and recalling render selections
       + Added: "Always render in track mode" setting, which lets you ignore selected items and removes the need to de-select them first before rendering a track or folder
@@ -31,7 +31,7 @@
       + Tweaked: The default Reaper render window will be slightly adjusted when rendering via RenderBuddy
       + Tweaked: NameSwitches will no longer be considered for context-sensitivity
       + Tweaked: Removed intrusive free trial popup reminders
-      + Tweaked: Other under-the-hood code changes
+      + Tweaked: Numerous under-the-hood code changes
 ]] ----------------------------------------------------------------------------------------
 -- Run Shared
 DTAV = _VERSION == 'Lua 5.3' and 'dta53' or 'dta'
@@ -48,7 +48,7 @@ reaper.SetExtState("LAx_PremiumReaperScripts", "MainDirectory", parentFolder, fa
 
 local sep = package.config:sub(1, 1)
 dofile((currentFolder or "") .. DTAV .. sep .. "runShared" ..
-           (reaper.file_exists((currentFolder or "") .. DTAV .. sep .. "runShared.lua") and ".lua" or ".dat"))
+    (reaper.file_exists((currentFolder or "") .. DTAV .. sep .. "runShared.lua") and ".lua" or ".dat"))
 
 if not LAx_init then
     return
