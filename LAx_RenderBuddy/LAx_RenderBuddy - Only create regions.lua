@@ -27,4 +27,4 @@ LAx_RenderBuddySettings.settings = {
 
 ----------------------------------------------------------------------------------------
 -- Run main file
-runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory") .. DTAV .. sep .. "functions", true)
+runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory") .. DTAV .. sep .. "main", true)

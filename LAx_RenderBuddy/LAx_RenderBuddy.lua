@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 2.00
+ Version: 2.01
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,22 +16,10 @@
 
 --[[
  * Changelog:
-    * v2.00
-      + Added: The "RenderBuddy Manager" which allows for a persistent managing of folders and all NameSwitch regions
-      + Added: A "Groups" functionality as part of the Manager, enabling saving and recalling render selections
-      + Added: "Always render in track mode" setting, which lets you ignore selected items and removes the need to de-select them first before rendering a track or folder
-      + Added: Optional render preview UI for rendering, listing all rendered tracks/folders and NameSwitch regions
-      + Added: Toolbar icons for Settings, creating NameSwitches and the Manager
-      + Added: License Manager GUI
-      + Tweaked: Renderbuddy now properly supports wildcards while maintaining the ability to use e.g. $track and $folders wildcards
-      + Tweaked: New settings menu with custom UI
-      + Tweaked: Regular rendering and using RenderBuddy will both preserve their render patterns individually
-      + Tweaked: The $folders wildcard now behaves like in vanilla Reaper (no separator at the end)
-      + Tweaked: Batch-rendering to work with language packs
-      + Tweaked: The default Reaper render window will be slightly adjusted when rendering via RenderBuddy
-      + Tweaked: NameSwitches will no longer be considered for context-sensitivity
-      + Tweaked: Removed intrusive free trial popup reminders
-      + Tweaked: Numerous under-the-hood code changes
+    * v2.01
+      + Fixed: RenderBuddy could sometimes throw an error when Rendering multiple folders via the Manager
+      + Fixed: "Only Create Regions" Action was not working
+      + Tweaked: "Only Create Regions" can now create Regions for multiple selected folders or tracks
 ]] ----------------------------------------------------------------------------------------
 -- Run Shared
 DTAV = _VERSION == 'Lua 5.3' and 'dta53' or 'dta'
