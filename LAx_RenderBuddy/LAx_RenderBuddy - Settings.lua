@@ -1,6 +1,7 @@
 -- @noindex
 ----------------------------------------------------------------------------------------
 -- Run Shared
+SkipLicenseGui = false
 DTAV = _VERSION == 'Lua 5.3' and 'dta53' or 'dta'
 local currentFolder = (debug.getinfo(1).source:match("@?(.*[\\|/])"))
 currentFolder = currentFolder:gsub("\\", "/")
