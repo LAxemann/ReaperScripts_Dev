@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.02
+ Version: 3.04
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,7 +16,7 @@
 
 --[[
  * Changelog:
-    * v3.01
+    * v3.04
       + Added: Custom, user-defined wildcards, configurable globally or per-project via the new WildcardManager
       + Added: ConfigItems (Via 'Create or edit ConfigItem') for item-based folder-specific rendering configuration
       + Added: Ability to set render patterns per track/folder (Via ConfigItem or directly in Manager)
@@ -32,6 +32,7 @@
       + Added: Optional settings to make folders flash when selecting them in the Manager
       + Added: Right-click context menu in empty Manager field to select all folders
       + Added: Ability to check for script version updates
+      + Added: Ability to blacklist tracks for rendering
       + Tweaked: Manager: The selection is now cleared when clicking into empty space
       + Tweaked: Overall color scheme (Old one is available as "RenderBuddy (Legacy)"" in the options)
       + Tweaked: RenderBuddy wildcards now work properly in the "Render to" field
