@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.01
+ Version: 3.02
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
