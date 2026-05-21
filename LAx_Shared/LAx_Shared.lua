@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 1.10
+ Version: 1.11
  Provides:
   [main] *.lua
   **/*.dat
@@ -14,7 +14,7 @@
 
 --[[
  * Changelog:
-    * v1.10
+    * v1.11
       + Added: LAx_Shared_ProductData
       + Added: LAx_Shared_StartupAction
       + Added: LAx_Shared_c_VersionChecker

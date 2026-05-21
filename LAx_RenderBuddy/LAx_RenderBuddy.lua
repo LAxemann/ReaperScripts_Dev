@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.00
+ Version: 3.01
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,7 +16,7 @@
 
 --[[
  * Changelog:
-    * v3.00
+    * v3.01
       + Added: Custom, user-defined wildcards, configurable globally or per-project via the new WildcardManager
       + Added: ConfigItems (Via 'Create or edit ConfigItem') for item-based folder-specific rendering configuration
       + Added: Ability to set render patterns per track/folder (Via ConfigItem or directly in Manager)
@@ -76,15 +76,6 @@ if not LAx_init then
     return
 end
 
--- Check the state of keyboard keys
-local function isSubfolderRender()
-    local keyRenderSubfolders = tonumber(reaper.GetExtState("LAx_RenderBuddy", "RenderSubfoldersModifier")) or 20
-    local keyboardState = reaper.JS_VKeys_GetState(reaper.time_precise() - 1)
-
-    return keyboardState:byte(keyRenderSubfolders) & 1 ~= 0
-end
-
 ----------------------------------------------------------------------------------------
 -- Run main file
-local file = isSubfolderRender() and "renderSubfolders" or "render"
-runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory") .. DTAV .. sep .. "rendering" .. sep .. file, true)
+runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory") .. DTAV .. sep .. "rendering" .. sep .. "render", true)
