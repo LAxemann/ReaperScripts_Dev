@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.05
+ Version: 3.06
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,7 +16,7 @@
 
 --[[
  * Changelog:
-    * v3.05
+    * v3.06
       + Added: Custom, user-defined wildcards, configurable globally or per-project via the new WildcardManager
       + Added: ConfigItems (Via 'Create or edit ConfigItem') for item-based folder-specific rendering configuration
       + Added: Ability to set render patterns per track/folder (Via ConfigItem or directly in Manager)
