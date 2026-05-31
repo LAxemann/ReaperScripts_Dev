@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.08
+ Version: 3.09
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,43 +16,15 @@
 
 --[[
  * Changelog:
-    * v3.08
-      + Added: Custom, user-defined wildcards, configurable globally or per-project via the new WildcardManager
-      + Added: ConfigItems (Via 'Create or edit ConfigItem') for item-based folder-specific rendering configuration
-      + Added: Ability to set render patterns per track/folder (Via ConfigItem or directly in Manager)
-      + Added: Ability to set render channel count per track/folder (Via ConfigItem or directly in Manager)
-      + Added: Ability to set the render directory per track/folder (Via ConfigItem or directly in Manager)
-      + Added: Ability to set the default Render Pattern in Settings
-      + Added: Region creation can now be previewed per-folder before rendering
-      + Added: Startup Action (Allowing to edit ConigItems via double-click)
-      + Added: Custom Render overview displaying all files-to-be-rendered, highlighting potential overwrites
-      + Added: Render overview allows to only display new or only display overwritten files
-      + Added: Custom post-render window, optionally gathering and combining renderStats
-      + Added: Manager: Ability to quickly render a single track/folder from Manager via right-click menu
-      + Added: Optional settings to make folders flash when selecting them in the Manager
-      + Added: Right-click context menu in empty Manager field to select all folders
-      + Added: Ability to check for script version updates
-      + Added: Ability to blacklist tracks for rendering
-      + Tweaked: Manager: The selection is now cleared when clicking into empty space
-      + Tweaked: Overall color scheme (Old one is available as "RenderBuddy (Legacy)"" in the options)
-      + Tweaked: RenderBuddy wildcards now work properly in the "Render to" field
-      + Tweaked: Reaper region indices are now created in order
-      + Tweaked: Manager: Groups interface
-      + Tweaked: Manager: Now auto-updates after certain changes in the project
-      + Tweaked: Manager: Selecting or deselecting for rendering will now apply to all selected rows
-      + Tweaked: Project default settings have a dedicated editing area for less ambiguity
-      + Tweaked: Various small changes to the Reaper rendering interface (When rendering via RenderBuddy)
-      + Tweaked: Complete code refactor
-      + Tweaked: Major performance improvements (40.000+ items + region creation in < 0.1s)
-      + Tweaked: Manager data is no longer stored in ExtState
-      + Tweaked: Links should open faster
-      + Fixed: The Manager will now register newly created tracks on the first click
-      + Fixed: The Manager's "Scroll mode" now works properly
-      + Fixed: The Manager "Folder" column would be wider than the input field
-      + Fixed: The Manager would not save its docking ID when closed via script termination
-      + Removed: Manual naming mode/shortcut (Obsolete due to nameSwitches etc)
-      + Removed: Render Subfolders Action (Many other options including the Manager)
-      + Removed: "Only Create Regions" Action (Regions can now be "baked" from the Render Window)
+    * v3.09
+      + Added: Ability to set per-folder sample rate
+      + Tweaked: Most windows can now be closed with ESC
+      + Tweaked: When previewing a track that is registered in the Manager, the settings will now be saved in the Manager
+      + Tweaked: Render preview gui now has scrollable file preview (if there are enough files/regions to be rendered)
+      + Fixed: Saving settings in RenderSettings would save all settings on a ConfigItm, not just the changed one(s)
+      + Fixed: Crashes when no settings where set and switching to Project Defaults in the render window
+      + Fixed: Possible crash when having "collapse folders during preview" enabled
+      + Fixed: Various other bug fixes and code hygiene
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
