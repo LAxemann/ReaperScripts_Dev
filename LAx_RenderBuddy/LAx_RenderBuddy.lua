@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.09
+ Version: 3.10
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,15 +16,11 @@
 
 --[[
  * Changelog:
-    * v3.09
-      + Added: Ability to set per-folder sample rate
-      + Tweaked: Most windows can now be closed with ESC
-      + Tweaked: When previewing a track that is registered in the Manager, the settings will now be saved in the Manager
-      + Tweaked: Render preview gui now has scrollable file preview (if there are enough files/regions to be rendered)
-      + Fixed: Saving settings in RenderSettings would save all settings on a ConfigItm, not just the changed one(s)
-      + Fixed: Crashes when no settings where set and switching to Project Defaults in the render window
-      + Fixed: Possible crash when having "collapse folders during preview" enabled
-      + Fixed: Various other bug fixes and code hygiene
+    * v3.10
+      + Fixed: Custom wildcards would not actually be processed during rendering, only in preview
+      + Fixed: Crash when changing Project Defaults in the RenderPreview
+      + Tweaked: Manager columns can now be reordered
+      + Tweaked: Manager columns can now be directly hidden via the header context menu
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
