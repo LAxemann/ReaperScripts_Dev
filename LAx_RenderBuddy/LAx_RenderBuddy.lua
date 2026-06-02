@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.10
+ Version: 3.12
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,11 +16,10 @@
 
 --[[
  * Changelog:
-    * v3.10
-      + Fixed: Custom wildcards would not actually be processed during rendering, only in preview
-      + Fixed: Crash when changing Project Defaults in the RenderPreview
-      + Tweaked: Manager columns can now be reordered
-      + Tweaked: Manager columns can now be directly hidden via the header context menu
+    * v3.12
+      + NOTE: NameSwitch handling was changed and futureproofed. You'll need to re-create nameSwitches with the current state of the actions.
+      + Added: Ability to set single file variation numbering per track/folder (Via ConfigItem or directly in Manager)
+      + Added: Custom NamwSwitch Gui
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false

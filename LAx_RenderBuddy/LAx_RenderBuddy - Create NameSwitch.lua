@@ -23,4 +23,4 @@ end
 
 ----------------------------------------------------------------------------------------
 -- Run target file
-runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory") .. DTAV .. sep .. "createNameSwitch", true)
+runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory") .. DTAV .. sep .. "nameSwitches" .. sep .. "createOrEditNameSwitch", true)
