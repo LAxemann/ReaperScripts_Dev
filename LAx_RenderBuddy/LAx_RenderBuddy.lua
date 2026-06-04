@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.12
+ Version: 3.13
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,10 +16,14 @@
 
 --[[
  * Changelog:
-    * v3.12
-      + NOTE: NameSwitch handling was changed and futureproofed. You'll need to re-create nameSwitches with the current state of the actions.
-      + Added: Ability to set single file variation numbering per track/folder (Via ConfigItem or directly in Manager)
-      + Added: Custom NamwSwitch Gui
+    * v3.13
+      + Tweaked: Code hygiene/efficiency changes
+      + Tweaked: Manager: Fields with default value now have grey text
+      + Tweaked: Manager: Deselecting a folder from rendering now flashes it dark
+      + Tweaked: Manager: Regular selection now flashes a bit shorter than rendering selection
+      + Tweaked: RenderBuddy's Render directory is now "separated" from the regular reaper render directory like all other settings
+      + Tweaked: NameSwitchGui can now be confirmed with Enter by default 
+      + Tweaked: NameSwitchGui now has a default selection upon opening
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
