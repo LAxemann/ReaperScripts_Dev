@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.13
+ Version: 3.14
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,14 +16,11 @@
 
 --[[
  * Changelog:
-    * v3.13
-      + Tweaked: Code hygiene/efficiency changes
-      + Tweaked: Manager: Fields with default value now have grey text
-      + Tweaked: Manager: Deselecting a folder from rendering now flashes it dark
-      + Tweaked: Manager: Regular selection now flashes a bit shorter than rendering selection
-      + Tweaked: RenderBuddy's Render directory is now "separated" from the regular reaper render directory like all other settings
-      + Tweaked: NameSwitchGui can now be confirmed with Enter by default 
-      + Tweaked: NameSwitchGui now has a default selection upon opening
+    * v3.14
+      + Tweaked: Introduced handling of failed or aborted renders
+      + Tweaked: NameSwitch and ConfigItem windows now appear at the mouse coursor
+      + Tweaked: Color scheme (previous WIP one can be found as "DarkPurple")
+      + Tweaked: RenderStats Gui can now be closed with Esc
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
