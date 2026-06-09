@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.14
+ Version: 3.15
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,11 +16,8 @@
 
 --[[
  * Changelog:
-    * v3.14
-      + Tweaked: Introduced handling of failed or aborted renders
-      + Tweaked: NameSwitch and ConfigItem windows now appear at the mouse coursor
-      + Tweaked: Color scheme (previous WIP one can be found as "DarkPurple")
-      + Tweaked: RenderStats Gui can now be closed with Esc
+    * v3.15
+      + Fixed: Applied a hotfix that prevented most functionality to work properly on Mac and Linux. There likely still are other cases that might not work right.
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
