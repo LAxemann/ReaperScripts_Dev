@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.15
+ Version: 3.16
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,8 +16,9 @@
 
 --[[
  * Changelog:
-    * v3.15
-      + Fixed: Applied a hotfix that prevented most functionality to work properly on Mac and Linux. There likely still are other cases that might not work right.
+    * v3.16
+      + Tweaked: Code sanitization around MacOS-refactors
+      + Tweaked: Added settings save hint to RenderInfoGui
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
