@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.16
+ Version: 3.17
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,9 +16,12 @@
 
 --[[
  * Changelog:
-    * v3.16
-      + Tweaked: Code sanitization around MacOS-refactors
-      + Tweaked: Added settings save hint to RenderInfoGui
+    * v3.17
+      + Added: Ability to set render tails per track/folder (Via ConfigItem or directly in Manager)
+      + Tweaked: Sample rate now has a "Hz" suffix in the Render Info Window
+      + Tweaked: Massive backend overhaul of how runtime settings are handled. Please let me know if things don't save/propagate as they should :)
+      + Tweaked: Optimized some functions for MacOS usage
+      + Fixed: Discrepancy between predicted/expected and actual file name when using $parent or $folder wildcards
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false

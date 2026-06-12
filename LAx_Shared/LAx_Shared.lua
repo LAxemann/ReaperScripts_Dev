@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 1.23
+ Version: 1.24
  Provides:
   [main] *.lua
   **/*.dat
@@ -14,6 +14,6 @@
 
 --[[
  * Changelog:
-    * v1.23
-      + Tweaked: The update checker should now work on MacOS
+    * v1.24
+      + Tweaked: MacOS-related tweaks
 ]]
