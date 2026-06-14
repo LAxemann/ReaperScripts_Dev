@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.18
+ Version: 3.19
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,9 +16,10 @@
 
 --[[
  * Changelog:
-    * v3.18
-      + Tweaked: Added tail settings to ConfigItem Gui
-      + Fixed: Possible crash when changing directory in Render Window
+    * v3.19
+      + Tweaked: The Manager RenderPattern field not features a "$" Wildcards dropdown, allowing to access both Reaper and custom RenderBuddy wildcards 
+      + Tweaked: Manager and WildcardManager inputfields now elide left, leaving the end rather than the start of the string visible
+      + Fixed: Crash when launching any Action without ImGui installed (instead of leading to ImGui installation)
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
