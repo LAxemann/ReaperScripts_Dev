@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.19
+ Version: 3.20
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,10 +16,10 @@
 
 --[[
  * Changelog:
-    * v3.19
-      + Tweaked: The Manager RenderPattern field not features a "$" Wildcards dropdown, allowing to access both Reaper and custom RenderBuddy wildcards 
-      + Tweaked: Manager and WildcardManager inputfields now elide left, leaving the end rather than the start of the string visible
-      + Fixed: Crash when launching any Action without ImGui installed (instead of leading to ImGui installation)
+    * v3.20
+      + Added: $rbregionnumber wildcard. Unlike reaper's $regionnumber, this will assign the actual RenderBuddy region number to the file.
+      + Removed: "Number regions" setting. Reaper numbers files by default and $rbregionnumber can now be used to place each region's number anywhere.
+      + Tweaked: Massive backend changes to how rendering works. Please be especially on the lookout for files that don't render where they should or have wrong names.
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false

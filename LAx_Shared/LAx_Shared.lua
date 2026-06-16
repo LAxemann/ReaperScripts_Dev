@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 1.26
+ Version: 1.27
  Provides:
   [main] *.lua
   **/*.dat
@@ -14,7 +14,6 @@
 
 --[[
  * Changelog:
-    * v1.25
-      + Tweaked: Validation security tweaks
-      + Tweaked: Cleanup of obsolete/unused functions
+    * v1.27
+      + Added: Various helper functions for filePath management/mutation
 ]]
