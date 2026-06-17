@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.21
+ Version: 3.22
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,8 +16,8 @@
 
 --[[
  * Changelog:
-    * v3.21
-      + Tweaked: Numbering now automatically adapts the user-defined incrementation format
+    * v3.22
+      + Fixed: RB could sometimes render into the wrong folder if the directory included special characters
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
