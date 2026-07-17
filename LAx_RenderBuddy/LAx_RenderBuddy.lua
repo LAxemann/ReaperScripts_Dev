@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.23
+ Version: 3.24
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,10 +16,9 @@
 
 --[[
  * Changelog:
-    * v3.23
-      + Tweaked: Muted tracks will now be ignored for the render region creation
-      + Fixed: Setting the "use last settings" shortcut was broken (gave no option to save the change)
-      + Tweaked: Smaller code refactors
+    * v3.24
+      + Added: Per-track file format (Can only be set in rendering dialog)
+      + Known issue: Manually entered folders in the "File name" field are being discarded
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
