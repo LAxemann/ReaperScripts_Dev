@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.24
+ Version: 3.25
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,9 +16,8 @@
 
 --[[
  * Changelog:
-    * v3.24
-      + Added: Per-track file format (Can only be set in rendering dialog)
-      + Known issue: Manually entered folders in the "File name" field are being discarded
+    * v3.25
+      + Fixed: Hopefully got rid of all remaining target file/render location issues
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
