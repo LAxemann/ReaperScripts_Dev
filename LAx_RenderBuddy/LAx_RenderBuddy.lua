@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.25
+ Version: 3.26
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,8 +16,8 @@
 
 --[[
  * Changelog:
-    * v3.25
-      + Fixed: Hopefully got rid of all remaining target file/render location issues
+    * v3.26
+      + Fixed: Another render pathing issue when rendering into a project default folder 
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
