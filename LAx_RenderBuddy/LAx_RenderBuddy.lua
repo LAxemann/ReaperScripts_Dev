@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.26
+ Version: 3.27
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,8 +16,18 @@
 
 --[[
  * Changelog:
-    * v3.26
-      + Fixed: Another render pathing issue when rendering into a project default folder 
+    * v3.27
+      + Added: Ability to automatically add all RenderBuddy actions to a (selectable) toolbar in Settings
+      + Added: On startup, RenderBuddy will ask once if the user would like to add all actions to a (selectable) toolbar 
+      + Tweaked: Children of blacklisted folders will no longer be considered for rendering
+      + Tweaked: ConfigItem UI now shows track indices without a trailing .0
+      + Fixed: ConfigItem UI would not show the "human-readable" file format name
+      + Fixed: Regular item notes would trigger the NameSwitch dialogue
+      + Fixed: Selecting tracks (not folders) would result in a batch render instead of a single file render
+      + Fixed: $tracknameornumber could be overwritten by the regular $track wildcard
+      + Fixed: Folders removed from the Manager would use their stored manager settings for rendering
+      + Fixed: Changing the opened project would not immediately load the project's Manager group data
+      + Fixed: Various other, smaller bugfixes
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false

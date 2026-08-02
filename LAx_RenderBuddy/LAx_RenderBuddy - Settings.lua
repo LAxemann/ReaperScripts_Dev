@@ -24,4 +24,4 @@ end
 
 ----------------------------------------------------------------------------------------
 -- Run target file
-runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory") .. DTAV .. sep .. "settings", true)
+runFile(reaper.GetExtState("LAx_RenderBuddy", "Directory") .. DTAV .. sep .. "settings" .. sep .. "settings", true)
