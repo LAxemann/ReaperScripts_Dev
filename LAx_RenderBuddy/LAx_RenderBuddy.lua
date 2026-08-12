@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.28
+ Version: 3.29
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,9 +16,8 @@
 
 --[[
  * Changelog:
-    * v3.28
-      + Added: Ability to set project default settings in Manager (Manager -> View -> Show project defaults)
-      + Fixed: Various other, smaller bugfixes
+    * v3.29
+      + Fixed: RenderBuddy would render into the wrong directory when the directory contained a "-" character
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
