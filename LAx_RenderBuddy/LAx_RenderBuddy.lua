@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.29
+ Version: 3.30
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -16,8 +16,8 @@
 
 --[[
  * Changelog:
-    * v3.29
-      + Fixed: RenderBuddy would render into the wrong directory when the directory contained a "-" character
+    * v3.30
+      + Fixed: MacOS Render Window alignment
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
