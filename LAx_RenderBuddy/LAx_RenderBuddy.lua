@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.32
+ Version: 3.33
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -17,9 +17,11 @@
 
 --[[
  * Changelog:
-    * v3.32
-      + Added: Trying out pdf inclusion in the archive...
-      + Fixed: An actual track could get deleted instead of the previewTrack in very rare circumstances
+    * v3.33
+      + Added: rbSharedFuncs.lua for shared functions
+      + Tweaked: Unified options menu entries
+      + Tweaked: Added ability to open the user guide via the options menu
+      + Fixed: ImGui-related crash
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
