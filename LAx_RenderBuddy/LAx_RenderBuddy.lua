@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.33
+ Version: 3.34
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -17,11 +17,9 @@
 
 --[[
  * Changelog:
-    * v3.33
-      + Added: rbSharedFuncs.lua for shared functions
-      + Tweaked: Unified options menu entries
-      + Tweaked: Added ability to open the user guide via the options menu
-      + Fixed: ImGui-related crash
+    * v3.34
+      + Tweaked: Custom wildcards can now contain full-blown render patterns, including other nested custom wildcards
+      + Tweaked: User Guide
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
