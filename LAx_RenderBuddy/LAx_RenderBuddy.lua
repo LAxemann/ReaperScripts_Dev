@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.34
+ Version: 3.35
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -17,9 +17,11 @@
 
 --[[
  * Changelog:
-    * v3.34
+    * v3.35
+      + Tweaked: Post-render window now tries to make the full file names/file paths more readable
       + Tweaked: Custom wildcards can now contain full-blown render patterns, including other nested custom wildcards
       + Tweaked: User Guide
+      + Tweaked: Waveform creation and drawing moved to shared functions 
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false

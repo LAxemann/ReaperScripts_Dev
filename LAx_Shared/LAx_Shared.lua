@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 1.41
+ Version: 1.42
  Provides:
   [main] *.lua
   **/*.dat
@@ -14,6 +14,7 @@
 
 --[[
  * Changelog:
-    * v1.41
+    * v1.42
+      + Added: LAx_Shared_c_WaveformManager for creating and drawing waveform peak data
       + Tweaked: ProductData
 ]]
