@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.39
+ Version: 3.40
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -17,7 +17,7 @@
 
 --[[
  * Changelog:
-    * v3.39
+    * v3.40
 	  + General: V3 is a complete, ground-up rewrite of RenderBuddy. Many thanks to all testers, allowing others to enjoy a more polished release!
       + Added: Custom, user-defined wildcards, configurable globally or per-project via the new WildcardManager. These wildcards can also be nested.
       + Added: ConfigItems (Via 'LAx_RenderBuddy - Create or edit ConfigItem.lua') for item-based folder-specific rendering configuration
