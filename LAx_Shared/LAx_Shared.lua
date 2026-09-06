@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 1.43
+ Version: 1.44
  Provides:
   [main] *.lua
   **/*.dat
@@ -14,6 +14,6 @@
 
 --[[
  * Changelog:
-    * v1.43
-      + Tweaked: Validation now uses bitwOR from utility instead of a duplicate one
+    * v1.44
+      + Tweaked: ProductData
 ]]

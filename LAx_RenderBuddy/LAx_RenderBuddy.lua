@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.37
+ Version: 3.38
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -17,15 +17,9 @@
 
 --[[
  * Changelog:
-    * v3.37
+    * v3.38
       + General: Release Candidate
-      + Added: Manual version check
-      + Added: "Auto save after close" setting
-      + Added: Warning when saving projects during rendering process
-      + Tweaked: When switching projects with the render interface open, RenderBuddy should now properly shut down
-      + Tweaked: Wildcard manager now shows the full wildcard when hovering
-      + Fixed: Cancelling the render confirmation window would discard the saved original render matrix
-      + Fixed: The settings would not toggle the action's icon state
+      + Added: New "first start" window
 ]] ----------------------------------------------------------------------------------------
 
 SkipLicenseGui = false
