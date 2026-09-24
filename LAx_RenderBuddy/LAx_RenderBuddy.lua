@@ -3,7 +3,7 @@
  Author: Leon 'LAxemann' Beilmann
  REAPER: 6
  Extensions: SWS, JS_ReaScript_API, ReaImGui
- Version: 3.42
+ Version: 3.43
  Provides:
   [main] *.lua
   [data] toolbar_icons/**/*.png
@@ -17,7 +17,7 @@
 
 --[[
  * Changelog:
-    * v3.42
+    * v3.43
 	  + Added: Variables
       + Fixed: RenderBuddy could fail to render if items with a length of 0 were present (usually created by other scripts/broken scripts). Implemented a failsafe.
 ]] ----------------------------------------------------------------------------------------
