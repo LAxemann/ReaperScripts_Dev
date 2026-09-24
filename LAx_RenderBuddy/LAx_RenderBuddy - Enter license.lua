@@ -13,4 +13,5 @@ reaper.SetExtState("LAx_PremiumReaperScripts", "MainDirectory", parentFolder, fa
 
 local sep = package.config:sub(1, 1)
 dofile((currentFolder or "") .. DTAV .. sep .. "runShared" .. (reaper.file_exists((currentFolder or "") .. DTAV .. sep .. "runShared.lua") and ".lua" or ".dat"))
+require("LAx_Shared_Validate")
 openLicenseManager()
